@@ -4,7 +4,7 @@ A comprehensive web resource for Colorado College physics students navigating su
 
 ## 🚀 About
 
-**Momentum** is a student-run initiative by the Colorado College Society of Physics Students (SPS) chapter. We centralize information about REU programs, research opportunities, application resources, and academic planning to support physics students throughout their undergraduate journey.
+**Momentum** is a student-run initiative started by Sean Lam for the Colorado College Society of Physics Students (SPS) chapter. We centralize information about REU programs, research opportunities, application resources, and academic planning to support physics students throughout their undergraduate journey.
 
 ### Key Features
 
@@ -60,7 +60,7 @@ momentum/
    - Navigate to "Pages" in the sidebar
    - Under "Source", select "main" branch
    - Click "Save"
-   - Your site will be live at: `https://YOUR-USERNAME.github.io/momentum-cc-physics/`
+   - Your site will be live at: `https://seanthelam.github.io/momentum/`
 
 ## 📝 How to Update Content
 
@@ -69,7 +69,7 @@ momentum/
 Edit `opportunities.html` and add a new opportunity block:
 
 ```html
-<div class="opportunity-item" data-type="reu" data-field="astrophysics">
+<div class="opportunity-item" data-type="reu" data-field="astro">
     <h4>Program Name - Institution</h4>
     <div class="opportunity-meta">
         <span class="meta-tag">🔭 Field</span>
