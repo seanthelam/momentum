@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Opportunities - Momentum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Momentum</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="opportunities.html" class="active">Opportunities</a></li>
+                <li><a href="pathways.html">Pathways</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h1>Summer 2026 Opportunities</h1>
+        <p>A curated list of REU programs, internships, and research opportunities for physics students. Use the filters below to find programs that match your interests.</p>
+    </div>
+
+    <main>
+        <!-- Filter Section -->
+        <section>
+            <div class="opportunities-filter">
+                <input type="text" class="filter-input" id="searchBox" placeholder="Search by name, location, or topic...">
+                <select class="filter-select" id="typeFilter">
+                    <option value="all">All Types</option>
+                    <option value="reu">REU</option>
+                    <option value="internship">Internship</option>
+                    <option value="research">Research Position</option>
+                </select>
+                <select class="filter-select" id="fieldFilter">
+                    <option value="all">All Fields</option>
+                    <option value="astro">Astronomy and Space</option>
+                    <option value="chem">Chemistry</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="math">Mathematics</option>
+                    <option value="physics">Physics</option>
+                </select>
+            </div>
+
+            <div id="opportunitiesList">
+                <!-- NSF REU -->
+                <div class="opportunity-item" data-type="reu" data-field="physics, engineering">
+                    <h4>Boston University Photonics REUs</h4>
+                    <div class="opportunity-meta">
+                        <span class="meta-tag">photonics; integrated nanomanufacturing; translational 
+                            biophotonics; cardiac tissue engineering; healthcare and medicine; electronics; computing;
+                            energy; cellular and biomaterial
+                        </span>
+                        <span class="meta-tag">📅 May 31 - August 8, 2026</span>
+                        <span class="meta-tag">💰 $7,000 + Housing + Travel Expenses</span>
+                        <span class="meta-tag">📍 Boston, Massachusetts</span>
+                    </div>
+                    <p>10-week programs focusing on photonics research at Boston University.</p>
+                    <p><strong>Deadline:</strong>March 15, 2026</p>
+                    <a href="https://reu.byu.edu/home" class="opportunity-link" target="_blank">Learn More →</a>
+                </div>
+
+                <div class="opportunity-item" data-type="reu" data-field="astro,physics">
+                    <h4>Physics Research at Brigham Young University (BYU)</h4>
+                    <div class="opportunity-meta">
+                        <span class="meta-tag">nonlinear, radiative and underwater acoustics;
+                            observational, planetary, stellar, and galactic astronomy;
+                            education research; imaging science; material science; mathematical modeling;
+                            microfabrication; nanomagnetism; numerical relativity; optics; particle
+                            theory; quantum information
+                        </span>
+                        <span class="meta-tag">📅 June 1 - August 7, 2026</span>
+                        <span class="meta-tag">💰 $7,000 + Housing + Travel Expenses</span>
+                        <span class="meta-tag">📍 Provo, Utah</span>
+                    </div>
+                    <p>10-week program focusing on various fields of physics.</p>
+                    <p><strong>Deadline:</strong> February 3, 2026</p>
+                    <a href="https://reu.byu.edu/home" class="opportunity-link" target="_blank">Learn More →</a>
+                </div>
+
+                <div class="opportunity-item" data-type="reu" data-field="physics, astro">
+                    <h4>California Institute of Technology (Caltech) LIGO SURF</h4>
+                    <div class="opportunity-meta">
+                        <span class="meta-tag">astronomy; astrophysics; experimental physics; data analysis
+                        </span>
+                        <span class="meta-tag">📅 June 16 - August 21, 2026</span>
+                        <span class="meta-tag">💰 $7,000 + Housing + Travel Expenses</span>
+                        <span class="meta-tag">📍 Pasadena, California; Richland, Washington;
+                            Livingston, Louisiana; Riverside, California
+                        </span>
+                    </div>
+                    <p>10-week program working on gravitational-wave astronomy through Caltech.</p>
+                    <p><strong>Deadline:</strong>January 11, 2026</p>
+                    <a href="https://labcit.ligo.caltech.edu/LIGO_web/students/SURF/" class="opportunity-link" target="_blank">Learn More →</a>
+                </div>
+
+                <div class="opportunity-item" data-type="research" data-field="all">
+                    <h4>CC Physics Department Summer Research</h4>
+                    <div class="opportunity-meta">
+                        <span class="meta-tag">🏔️ Various Fields</span>
+                        <span class="meta-tag">📅 June - August 2026</span>
+                        <span class="meta-tag">💰 Varies by Program</span>
+                        <span class="meta-tag">📍 Colorado Springs, Colorado</span>
+                    </div>
+                    <p>Work directly with CC physics faculty on their research projects. Great option for first-time researchers or those who want to stay local.</p>
+                    <p><strong>Deadline:</strong> Contact faculty directly (start in January)</p>
+                    <a href="#" class="opportunity-link">Contact Physics Department →</a>
+                </div>
+
+                <div class="opportunity-item" data-type="reu" data-field="physics, astro">
+                    <h4>Plasma Physics, Plasma Astrophysics, and Fusion at Columbia University</h4>
+                    <div class="opportunity-meta">
+                        <span class="meta-tag">plasma, astrophysics, fusion, physics
+                        </span>
+                        <span class="meta-tag">📅 June 1 - August 7, 2026</span>
+                        <span class="meta-tag">💰 $7,000 + Housing + Travel Expenses + $800 conference grant</span>
+                        <span class="meta-tag">📍 New York, New York
+                        </span>
+                    </div>
+                    <p>10-week program focusing on plasma physics applied toward magnetic confinement fusion and plasma astrophysics.</p>
+                    <p><strong>Deadline:</strong>January 31, 2026</p>
+                    <a href="https://fusion.columbia.edu/reu-site" class="opportunity-link" target="_blank">Learn More →</a>
+                </div>
+
+                <div class="opportunity-item" data-type="reu" data-field="physics">
+                    <h4>Nuclear and Particle Physics at TUNL and Duke University</h4>
+                    <div class="opportunity-meta">
+                        <span class="meta-tag">nuclear physics, particle physics, high energy</span>
+                
+                        </span>
+                    </div>
+                    <p>10-week program focusing on nuclear and particle physics.</p>
+                    <p><strong>Deadline:</strong>Unknown</p>
+                    <a href="https://tunl.duke.edu/education/reu" class="opportunity-link" target="_blank">Learn More →</a>
+                </div>
+
+                <div class="opportunity-item" data-type="reu" data-field="astro,physics">
+                    <h4>Kansas State REU: Interactions of Matter, Light and Learning</h4>
+                    <div class="opportunity-meta">
+                        <span class="meta-tag">atomic, molecular and optical physics,
+                            condensed, soft matter and biological physics, particle physics,
+                            physics education, quantum physics
+                        </span>
+                        <span class="meta-tag">📅 2026</span>
+                        <span class="meta-tag">💰 </span>
+                        <span class="meta-tag">📍 Manhattan, Kansas</span>
+                    </div>
+                    <p>10-week program focusing on various fields of physics.
+                    </p>
+                    <p><strong>Deadline:</strong>2026</p>
+                    <a href="https://www.phys.ksu.edu/reu/" class="opportunity-link" target="_blank">Learn More →</a>
+                </div>
+
+                <div class="opportunity-item" data-type="reu" data-field="astro,physics">
+                    <h4>Sustainable Physics REU at Pennsylvania State University (Penn State)</h4>
+                    <div class="opportunity-meta">
+                        <span class="meta-tag">astroparticle physics, cosmology, graviational wave,
+                            atomic, molecular physics, optical physics, condensed matter, quantum, sustainability
+                        </span>
+                        <span class="meta-tag">📅 May 26 - July 31, 2026</span>
+                        <span class="meta-tag">💰 $7,000 + Housing + Travel Expenses</span>
+                        <span class="meta-tag">📍 University Park, Pennsylvania</span>
+                    </div>
+                    <p>10-week program focusing on various research within sustainable physics, from subatomic to the cosmos.
+                    </p>
+                    <p><strong>Deadline:</strong>February 15, 2026</p>
+                    <a href="https://sites.psu.edu/physicsreu/" class="opportunity-link" target="_blank">Learn More →</a>
+                </div>
+
+                <div class="opportunity-item" data-type="reu" data-field="astro,physics">
+                    <h4>Life in the Universe: Astronomy and Planetary Science at the SETI Institute</h4>
+                    <div class="opportunity-meta">
+                        <span class="meta-tag">extraterrestrial intelligence, solar system, planetary
+                            formation, evolution, astrobiology
+                        </span>
+                        <span class="meta-tag">📅 May 31 - August 8, 2026</span>
+                        <span class="meta-tag">💰 $7,000 + Housing + Travel Expenses</span>
+                        <span class="meta-tag">📍 Mountain View, California</span>
+                    </div>
+                    <p>10-week program focusing on astronomy, astrobiology, and planetary science at the SETI Institute.
+                        Work with scientists at the SETI Institute and at the nearby NASA Ames Research Center.
+                    </p>
+                    <p><strong>Deadline:</strong> February 1, 2026</p>
+                    <a href="https://www.seti.org/education/reu/" class="opportunity-link" target="_blank">Learn More →</a>
+                </div>
+
+                <div class="opportunity-item" data-type="reu" data-field="astro,physics">
+                    <h4>University of Kansas Physics and Astronomy REU</h4>
+                    <div class="opportunity-meta">
+                        <span class="meta-tag">astronomy, astrophysics, high energy theory, condensed matter
+                            theory, experimental
+                        </span>
+                        <span class="meta-tag">📅 Unknown</span>
+                        <span class="meta-tag">💰 $7,000 + Housing + Meals + Travel Expenses</span>
+                        <span class="meta-tag">📍 Lawrence, Kansas</span>
+                    </div>
+                    <p>10-week program focusing on astronomy and physics at the University of Kansas.
+                    </p>
+                    <p><strong>Deadline:</strong>Unknown</p>
+                    <a href="https://physastroreu.ku.edu/" class="opportunity-link" target="_blank">Learn More →</a>
+                </div>
+
+                <div class="opportunity-item" data-type="reu" data-field="astro,physics">
+                    <h4>University of Utah Physics REU</h4>
+                    <div class="opportunity-meta">
+                        <span class="meta-tag">astronomy, astroparticle physics, biophysics, condensed 
+                            matter physics, high energy physics, particle physics, physics education
+                        </span>
+                        <span class="meta-tag">📅 May 21 - August 1, 2026</span>
+                        <span class="meta-tag">💰 $7,000 + Housing + Travel Expenses + $1,000 conference grant</span>
+                        <span class="meta-tag">📍 Salt Lake City, Utah</span>
+                    </div>
+                    <p>10-week program focusing on various fields of physics.
+                    </p>
+                    <p><strong>Deadline:</strong>February 1, 2026</p>
+                    <a href="https://www.physics.utah.edu/reu-opportunities/" class="opportunity-link" target="_blank">Learn More →</a>
+                </div>
+
+    
+
+
+
+
+
+
+
+
+
+            
+
+                <!-- SULI Program -->
+                <div class="opportunity-item" data-type="internship" data-field="all">
+                    <h4>DOE SULI Program (Science Undergraduate Laboratory Internships)</h4>
+                    <div class="opportunity-meta">
+                        <span class="meta-tag">🔬 Various Fields</span>
+                        <span class="meta-tag">📅 May - August 2026</span>
+                        <span class="meta-tag">💰 $650/week + Housing/Travel</span>
+                        <span class="meta-tag">📍 17 DOE Labs Nationwide</span>
+                    </div>
+                    <p>Work at Department of Energy national laboratories on projects ranging from high energy physics to renewable energy. Choose from 17 locations including SLAC, Berkeley Lab, Los Alamos, and more.</p>
+                    <p><strong>Deadline:</strong> January 9, 2026</p>
+                    <a href="https://science.osti.gov/wdts/suli" class="opportunity-link" target="_blank">Learn More →</a>
+                </div>
+
+                
+            </div>
+
+            <div class="info-box blue" style="margin-top: 3rem;">
+                <h4>💡 Want to Add an Opportunity?</h4>
+                <p>Know of a great program we're missing? This is a living document! Contact the SPS chapter to suggest additions or updates, or submit a pull request on our GitHub repository.</p>
+            </div>
+        </section>
+
+        <!-- Additional Resources -->
+        <section>
+            <h2>Finding More Opportunities</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h4>NSF REU Directory</h4>
+                    <p>The official NSF database of all funded REU programs in physics and astronomy across the country.</p>
+                    <a href="https://www.nsf.gov/crssprgm/reu/list_result.jsp?unitid=69" class="opportunity-link" target="_blank">Browse NSF REUs →</a>
+                </div>
+                <div class="card">
+                    <h4>DOE National Labs</h4>
+                    <p>Apply to 17 national laboratories through the SULI program for cutting-edge research in energy and physics.</p>
+                    <a href="https://science.osti.gov/wdts/suli" class="opportunity-link" target="_blank">View SULI Program →</a>
+                </div>
+                <div class="card">
+                    <h4>APS Internships</h4>
+                    <p>American Physical Society maintains a list of industry internships and research opportunities for physics students.</p>
+                    <a href="https://www.aps.org/careers/employment/opportunities.cfm" class="opportunity-link" target="_blank">Explore APS Opportunities →</a>
+                </div>
+                <div class="card">
+                    <h4>Direct Faculty Contact</h4>
+                    <p>Reach out to professors at universities you're interested in. Many have summer positions even without formal REU programs.</p>
+                    <a href="resources.html#contacting-professors" class="opportunity-link">Read Our Guide →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Momentum</h3>
+                <p>Colorado College Physics Student Resources</p>
+                <p style="margin-top: 1rem;">Built with ⚛️ by students, for students</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="opportunities.html">Summer Opportunities</a>
+                <a href="pathways.html">Academic Pathways</a>
+                <a href="resources.html">Application Resources</a>
+                <a href="timeline.html">Application Timeline</a>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <a href="https://www.nsf.gov/crssprgm/reu/list_result.jsp?unitid=69" target="_blank">NSF REU List</a>
+                <a href="https://science.osti.gov/wdts/suli" target="_blank">DOE SULI Program</a>
+                <a href="https://www.aps.org/" target="_blank">American Physical Society</a>
+                <a href="https://www.spsnational.org/" target="_blank">SPS National</a>
+            </div>
+            <div class="footer-section">
+                <h3>Colorado College</h3>
+                <a href="https://www.coloradocollege.edu/academics/dept/physics/" target="_blank">Physics Department</a>
+                <a href="https://www.coloradocollege.edu/" target="_blank">CC Homepage</a>
+                <a href="about.html">SPS Chapter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Colorado College Society of Physics Students. Last updated: November 2025</p>
+            <p style="margin-top: 0.5rem;">Maintained on <a href="#" style="color: var(--cc-gold);">GitHub</a> • Contributions welcome!</p>
+        </div>
+    </footer>
+
+    <script>
+        // Search and filter functionality
+        const searchBox = document.getElementById('searchBox');
+        const typeFilter = document.getElementById('typeFilter');
+        const fieldFilter = document.getElementById('fieldFilter');
+        const opportunities = document.querySelectorAll('.opportunity-item');
+
+        function filterOpportunities() {
+            const searchTerm = searchBox.value.toLowerCase();
+            const typeValue = typeFilter.value;
+            const fieldValue = fieldFilter.value;
+
+            opportunities.forEach(opp => {
+                const text = opp.textContent.toLowerCase();
+                const type = opp.dataset.type;
+                const field = opp.dataset.field;
+
+                const matchesSearch = text.includes(searchTerm);
+                const matchesType = typeValue === 'all' || type === typeValue;
+                const matchesField = fieldValue === 'all' || field === fieldValue || field === 'all';
+
+                if (matchesSearch && matchesType && matchesField) {
+                    opp.style.display = 'block';
+                } else {
+                    opp.style.display = 'none';
+                }
+            });
+        }
+
+        searchBox.addEventListener('input', filterOpportunities);
+        typeFilter.addEventListener('change', filterOpportunities);
+        fieldFilter.addEventListener('change', filterOpportunities);
+    </script>
+</body>
+</html>
