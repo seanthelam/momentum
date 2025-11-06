@@ -88,6 +88,62 @@ nav a.active {
     border-bottom: 2px solid var(--cc-gold);
 }
 
+/* Dropdown Navigation */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--cosmic-blue);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    z-index: 1001;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    animation: fadeIn 0.2s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.dropdown-content a {
+    color: var(--white);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--deep-space);
+    color: var(--cc-gold);
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+.dropdown > a::after {
+    content: " ▾";
+    font-size: 0.8em;
+}
+
+/* Add padding to dropdown container for easier mouse movement */
+.dropdown-content::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--deep-space) 0%, var(--cosmic-blue) 50%, var(--light-blue) 100%);

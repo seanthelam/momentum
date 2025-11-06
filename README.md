@@ -46,7 +46,7 @@ momentum/
 Edit `opportunities.html` and add a new opportunity block:
 
 ```html
-<div class="opportunity-item" data-type="reu" data-field="astro">
+<div class="opportunity-item" data-type="reu" data-fields="astronomy-space,physics" data-location="west,usa">
     <h4>Program Name - Institution</h4>
     <div class="opportunity-meta">
         <span class="meta-tag">🔭 Field</span>
@@ -113,6 +113,6 @@ With attribution to Colorado College SPS.
 
 ---
 
-**Momentum** - Built by Sean Lam for students
+**Momentum** - Built by students, for students
 
 *Last Updated: November 2025*

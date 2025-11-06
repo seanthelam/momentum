@@ -14,9 +14,21 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="opportunities.html" class="active">Opportunities</a></li>
-                <li><a href="pathways.html">Pathways</a></li>
+                <li class="dropdown">
+                    <a href="pathways.html">Pathways</a>
+                    <div class="dropdown-content">
+                        <a href="pathways.html">Major & Minor Paths</a>
+                        <a href="career-paths.html">Career Paths</a>
+                    </div>
+                </li>
                 <li><a href="resources.html">Resources</a></li>
-                <li><a href="timeline.html">Timeline</a></li>
+                <li class="dropdown">
+                    <a href="timeline.html">Timeline</a>
+                    <div class="dropdown-content">
+                        <a href="timeline.html">Summer 2026 Apps</a>
+                        <a href="grad-school-timeline.html">Grad School Apps</a>
+                    </div>
+                </li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
@@ -24,7 +36,7 @@
 
     <div class="page-header">
         <h1>Summer 2026 Opportunities</h1>
-        <p>A curated list of REU programs, internships, and research opportunities for physics students. Use the filters below to find programs that match your interests.</p>
+        <p>A curated list of REU programs, internships, and research opportunities. Use the filters below to find programs that match your interests.</p>
     </div>
 
     <main>
@@ -32,25 +44,38 @@
         <section>
             <div class="opportunities-filter">
                 <input type="text" class="filter-input" id="searchBox" placeholder="Search by name, location, or topic...">
+                
                 <select class="filter-select" id="typeFilter">
                     <option value="all">All Types</option>
                     <option value="reu">REU</option>
                     <option value="internship">Internship</option>
                     <option value="research">Research Position</option>
                 </select>
+                
                 <select class="filter-select" id="fieldFilter">
                     <option value="all">All Fields</option>
-                    <option value="astro">Astronomy and Space</option>
-                    <option value="chem">Chemistry</option>
+                    <option value="astronomy-space">Astronomy & Space</option>
+                    <option value="chemistry">Chemistry</option>
                     <option value="engineering">Engineering</option>
-                    <option value="math">Mathematics</option>
+                    <option value="mathematics">Mathematics</option>
                     <option value="physics">Physics</option>
+                    <option value="policy-business">Policy & Business</option>
+                </select>
+
+                <select class="filter-select" id="locationFilter">
+                    <option value="all">All Locations</option>
+                    <option value="international">International</option>
+                    <option value="usa">United States</option>
+                    <option value="midwest">Midwest Region</option>
+                    <option value="northeast">Northeast Region</option>
+                    <option value="west">West Coast</option>
+                    <option value="south">South Region</option>
                 </select>
             </div>
 
             <div id="opportunitiesList">
-                <!-- NSF REU -->
-                <div class="opportunity-item" data-type="reu" data-field="physics, engineering">
+
+                <div class="opportunity-item" data-type="reu" data-fields="engineering,physics" data-location="usa,northeast">
                     <h4>Boston University Photonics REUs</h4>
                     <div class="opportunity-meta">
                         <span class="meta-tag">photonics; integrated nanomanufacturing; translational 
@@ -66,7 +91,7 @@
                     <a href="https://reu.byu.edu/home" class="opportunity-link" target="_blank">Learn More →</a>
                 </div>
 
-                <div class="opportunity-item" data-type="reu" data-field="astro,physics">
+                <div class="opportunity-item" data-type="reu" data-fields="astronomy-space,physics" data-location="usa,west">
                     <h4>Physics Research at Brigham Young University (BYU)</h4>
                     <div class="opportunity-meta">
                         <span class="meta-tag">nonlinear, radiative and underwater acoustics;
@@ -84,7 +109,7 @@
                     <a href="https://reu.byu.edu/home" class="opportunity-link" target="_blank">Learn More →</a>
                 </div>
 
-                <div class="opportunity-item" data-type="reu" data-field="physics, astro">
+                <div class="opportunity-item" data-type="reu" data-fields="astronomy-space,physics,mathematics" data-location="usa,west">
                     <h4>California Institute of Technology (Caltech) LIGO SURF</h4>
                     <div class="opportunity-meta">
                         <span class="meta-tag">astronomy; astrophysics; experimental physics; data analysis
@@ -100,7 +125,7 @@
                     <a href="https://labcit.ligo.caltech.edu/LIGO_web/students/SURF/" class="opportunity-link" target="_blank">Learn More →</a>
                 </div>
 
-                <div class="opportunity-item" data-type="research" data-field="all">
+                <div class="opportunity-item" data-type="research" data-fields="all" data-location="usa,west">
                     <h4>CC Physics Department Summer Research</h4>
                     <div class="opportunity-meta">
                         <span class="meta-tag">🏔️ Various Fields</span>
@@ -113,7 +138,7 @@
                     <a href="#" class="opportunity-link">Contact Physics Department →</a>
                 </div>
 
-                <div class="opportunity-item" data-type="reu" data-field="physics, astro">
+                <div class="opportunity-item" data-type="reu" data-fields="astronomy-space,physics" data-location="usa,northeast">
                     <h4>Plasma Physics, Plasma Astrophysics, and Fusion at Columbia University</h4>
                     <div class="opportunity-meta">
                         <span class="meta-tag">plasma, astrophysics, fusion, physics
@@ -128,7 +153,7 @@
                     <a href="https://fusion.columbia.edu/reu-site" class="opportunity-link" target="_blank">Learn More →</a>
                 </div>
 
-                <div class="opportunity-item" data-type="reu" data-field="physics">
+                <div class="opportunity-item" data-type="reu" data-fields="physics" data-location="usa,south">
                     <h4>Nuclear and Particle Physics at TUNL and Duke University</h4>
                     <div class="opportunity-meta">
                         <span class="meta-tag">nuclear physics, particle physics, high energy</span>
@@ -140,7 +165,7 @@
                     <a href="https://tunl.duke.edu/education/reu" class="opportunity-link" target="_blank">Learn More →</a>
                 </div>
 
-                <div class="opportunity-item" data-type="reu" data-field="astro,physics">
+                <div class="opportunity-item" data-type="reu" data-fields="astronomy-space,physics" data-location="usa,midwest">
                     <h4>Kansas State REU: Interactions of Matter, Light and Learning</h4>
                     <div class="opportunity-meta">
                         <span class="meta-tag">atomic, molecular and optical physics,
@@ -157,7 +182,7 @@
                     <a href="https://www.phys.ksu.edu/reu/" class="opportunity-link" target="_blank">Learn More →</a>
                 </div>
 
-                <div class="opportunity-item" data-type="reu" data-field="astro,physics">
+                <div class="opportunity-item" data-type="reu" data-fields="astronomy-space,physics" data-location="northeast,usa">
                     <h4>Sustainable Physics REU at Pennsylvania State University (Penn State)</h4>
                     <div class="opportunity-meta">
                         <span class="meta-tag">astroparticle physics, cosmology, graviational wave,
@@ -173,7 +198,7 @@
                     <a href="https://sites.psu.edu/physicsreu/" class="opportunity-link" target="_blank">Learn More →</a>
                 </div>
 
-                <div class="opportunity-item" data-type="reu" data-field="astro,physics">
+                <div class="opportunity-item" data-type="reu" data-fields="astronomy-space,physics" data-location="usa">
                     <h4>Life in the Universe: Astronomy and Planetary Science at the SETI Institute</h4>
                     <div class="opportunity-meta">
                         <span class="meta-tag">extraterrestrial intelligence, solar system, planetary
@@ -190,7 +215,7 @@
                     <a href="https://www.seti.org/education/reu/" class="opportunity-link" target="_blank">Learn More →</a>
                 </div>
 
-                <div class="opportunity-item" data-type="reu" data-field="astro,physics">
+                <div class="opportunity-item" data-type="reu" data-fields="astronomy-space,physics" data-location="midwest,usa">
                     <h4>University of Kansas Physics and Astronomy REU</h4>
                     <div class="opportunity-meta">
                         <span class="meta-tag">astronomy, astrophysics, high energy theory, condensed matter
@@ -206,7 +231,7 @@
                     <a href="https://physastroreu.ku.edu/" class="opportunity-link" target="_blank">Learn More →</a>
                 </div>
 
-                <div class="opportunity-item" data-type="reu" data-field="astro,physics">
+                <div class="opportunity-item" data-type="reu" data-fields="astronomy-space,physics" data-location="west,usa">
                     <h4>University of Utah Physics REU</h4>
                     <div class="opportunity-meta">
                         <span class="meta-tag">astronomy, astroparticle physics, biophysics, condensed 
@@ -232,13 +257,49 @@
 
 
 
-            
+
+
+
+                <!-- NIST SURF -->
+                <div class="opportunity-item" data-type="internship" data-fields="physics,engineering,chemistry" data-location="west,northeast,usa">
+                    <h4>NIST Summer Undergraduate Research Fellowship (SURF)</h4>
+                    <div class="opportunity-meta">
+                        <span class="meta-tag">⚛️ Physics</span>
+                        <span class="meta-tag">🔧 Engineering</span>
+                        <span class="meta-tag">🧪 Chemistry</span>
+                        <span class="meta-tag">📅 June - August 2026</span>
+                        <span class="meta-tag">💰 $6,000</span>
+                        <span class="meta-tag">📍 Boulder, CO / Gaithersburg, MD</span>
+                    </div>
+                    <p>Work alongside NIST researchers on cutting-edge measurement science projects. Strong emphasis on quantum physics, atomic physics, precision measurements, and materials science.</p>
+                    <p><strong>Deadline:</strong> February 1, 2026</p>
+                    <a href="https://www.nist.gov/surf" class="opportunity-link" target="_blank">Learn More →</a>
+                </div>
+
+                <!-- Fermilab -->
+                <div class="opportunity-item" data-type="internship" data-fields="physics,engineering,mathematics" data-location="illinois,midwest,usa">
+                    <h4>Fermilab Summer Internship in Particle Physics</h4>
+                    <div class="opportunity-meta">
+                        <span class="meta-tag">⚛️ Physics</span>
+                        <span class="meta-tag">🔧 Engineering</span>
+                        <span class="meta-tag">📐 Mathematics</span>
+                        <span class="meta-tag">📅 June - August 2026</span>
+                        <span class="meta-tag">💰 $6,500 + Housing Assistance</span>
+                        <span class="meta-tag">📍 Batavia, IL</span>
+                    </div>
+                    <p>Hands-on research at America's premier particle physics laboratory. Work on neutrino experiments, accelerator physics, or detector development with computational and engineering components.</p>
+                    <p><strong>Deadline:</strong> January 15, 2026</p>
+                    <a href="https://www.fnal.gov/education/student-internship-programs/" class="opportunity-link" target="_blank">Learn More →</a>
+                </div>
 
                 <!-- SULI Program -->
-                <div class="opportunity-item" data-type="internship" data-field="all">
+                <div class="opportunity-item" data-type="internship" data-fields="physics,chemistry,engineering,mathematics" data-location="usa">
                     <h4>DOE SULI Program (Science Undergraduate Laboratory Internships)</h4>
                     <div class="opportunity-meta">
-                        <span class="meta-tag">🔬 Various Fields</span>
+                        <span class="meta-tag">⚛️ Physics</span>
+                        <span class="meta-tag">🧪 Chemistry</span>
+                        <span class="meta-tag">🔧 Engineering</span>
+                        <span class="meta-tag">📐 Mathematics</span>
                         <span class="meta-tag">📅 May - August 2026</span>
                         <span class="meta-tag">💰 $650/week + Housing/Travel</span>
                         <span class="meta-tag">📍 17 DOE Labs Nationwide</span>
@@ -248,7 +309,85 @@
                     <a href="https://science.osti.gov/wdts/suli" class="opportunity-link" target="_blank">Learn More →</a>
                 </div>
 
-                
+                <!-- CC Local Research -->
+                <div class="opportunity-item" data-type="research" data-fields="physics,astronomy-space,mathematics" data-location="west,usa">
+                    <h4>CC Physics Department Summer Research</h4>
+                    <div class="opportunity-meta">
+                        <span class="meta-tag">⚛️ Physics</span>
+                        <span class="meta-tag">🔭 Astronomy & Space</span>
+                        <span class="meta-tag">📐 Mathematics</span>
+                        <span class="meta-tag">📅 May - August 2026</span>
+                        <span class="meta-tag">💰 Varies by Program</span>
+                        <span class="meta-tag">📍 Colorado Springs, CO</span>
+                    </div>
+                    <p>Work directly with CC physics faculty on their research projects. Great option for first-time researchers or those who want to stay local. Projects span experimental physics, computational modeling, and astrophysics.</p>
+                    <p><strong>Deadline:</strong> Contact faculty directly (start in January)</p>
+                    <a href="#" class="opportunity-link">Contact Physics Department →</a>
+                </div>
+
+                <!-- Caltech -->
+                <div class="opportunity-item" data-type="internship" data-fields="physics,astronomy-space,engineering,mathematics" data-location="west,usa">
+                    <h4>Caltech SURF (Summer Undergraduate Research Fellowship)</h4>
+                    <div class="opportunity-meta">
+                        <span class="meta-tag">⚛️ Physics</span>
+                        <span class="meta-tag">🔭 Astronomy & Space</span>
+                        <span class="meta-tag">🔧 Engineering</span>
+                        <span class="meta-tag">📐 Mathematics</span>
+                        <span class="meta-tag">📅 June - August 2026</span>
+                        <span class="meta-tag">💰 $7,000 + Housing</span>
+                        <span class="meta-tag">📍 Pasadena, CA</span>
+                    </div>
+                    <p>Prestigious program at Caltech. Work with world-class faculty in physics, astrophysics, planetary science, or applied physics. Highly competitive and interdisciplinary.</p>
+                    <p><strong>Deadline:</strong> February 22, 2026</p>
+                    <a href="https://sfp.caltech.edu/undergraduate-research/programs/surf" class="opportunity-link" target="_blank">Learn More →</a>
+                </div>
+
+                <!-- NASA Internship -->
+                <div class="opportunity-item" data-type="internship" data-fields="astronomy-space,engineering,physics" data-location="usa">
+                    <h4>NASA Internships (OSTEM)</h4>
+                    <div class="opportunity-meta">
+                        <span class="meta-tag">🔭 Astronomy & Space</span>
+                        <span class="meta-tag">🔧 Engineering</span>
+                        <span class="meta-tag">⚛️ Physics</span>
+                        <span class="meta-tag">📅 June - August 2026</span>
+                        <span class="meta-tag">💰 Varies by Center</span>
+                        <span class="meta-tag">📍 Multiple NASA Centers</span>
+                    </div>
+                    <p>Work on space missions, astrophysics research, or engineering projects at NASA centers nationwide. Opportunities range from telescope operations to spacecraft design.</p>
+                    <p><strong>Deadline:</strong> Rolling (apply early, by November)</p>
+                    <a href="https://intern.nasa.gov/" class="opportunity-link" target="_blank">Learn More →</a>
+                </div>
+
+                <!-- CERN Summer Student Programme -->
+                <div class="opportunity-item" data-type="internship" data-fields="physics,engineering,mathematics" data-location="international">
+                    <h4>CERN Summer Student Programme</h4>
+                    <div class="opportunity-meta">
+                        <span class="meta-tag">⚛️ Physics</span>
+                        <span class="meta-tag">🔧 Engineering</span>
+                        <span class="meta-tag">📐 Mathematics</span>
+                        <span class="meta-tag">📅 June - August 2026</span>
+                        <span class="meta-tag">💰 ~3,200 CHF/month + Housing</span>
+                        <span class="meta-tag">📍 Geneva, Switzerland</span>
+                    </div>
+                    <p>Work at the world's premier particle physics laboratory. Participate in cutting-edge research on the Large Hadron Collider and other experiments. Includes lecture series and tours.</p>
+                    <p><strong>Deadline:</strong> January 31, 2026</p>
+                    <a href="https://home.cern/summer-student-programme" class="opportunity-link" target="_blank">Learn More →</a>
+                </div>
+
+                <!-- Science Policy Internship -->
+                <div class="opportunity-item" data-type="internship" data-fields="policy-business,physics" data-location="usa">
+                    <h4>AIP Congressional Science Fellowship</h4>
+                    <div class="opportunity-meta">
+                        <span class="meta-tag">📊 Policy & Business</span>
+                        <span class="meta-tag">⚛️ Physics</span>
+                        <span class="meta-tag">📅 Academic Year Program</span>
+                        <span class="meta-tag">💰 Stipend + Benefits</span>
+                        <span class="meta-tag">📍 Washington, DC</span>
+                    </div>
+                    <p>Work in Congress on science policy issues. Open to physics students interested in the intersection of science and policy. Applications typically due in January for following year.</p>
+                    <p><strong>Deadline:</strong> Check AIP website for current cycle</p>
+                    <a href="https://www.aip.org/policy/congressional-science-fellowships" class="opportunity-link" target="_blank">Learn More →</a>
+                </div>
             </div>
 
             <div class="info-box blue" style="margin-top: 3rem;">
@@ -320,27 +459,31 @@
     </footer>
 
     <script>
-        // Search and filter functionality
+        // Multi-field, multi-location search and filter functionality
         const searchBox = document.getElementById('searchBox');
         const typeFilter = document.getElementById('typeFilter');
         const fieldFilter = document.getElementById('fieldFilter');
+        const locationFilter = document.getElementById('locationFilter');
         const opportunities = document.querySelectorAll('.opportunity-item');
 
         function filterOpportunities() {
             const searchTerm = searchBox.value.toLowerCase();
             const typeValue = typeFilter.value;
             const fieldValue = fieldFilter.value;
+            const locationValue = locationFilter.value;
 
             opportunities.forEach(opp => {
                 const text = opp.textContent.toLowerCase();
                 const type = opp.dataset.type;
-                const field = opp.dataset.field;
+                const fields = opp.dataset.fields.split(','); // Multiple fields
+                const locations = opp.dataset.location.split(','); // Multiple locations
 
                 const matchesSearch = text.includes(searchTerm);
                 const matchesType = typeValue === 'all' || type === typeValue;
-                const matchesField = fieldValue === 'all' || field === fieldValue || field === 'all';
+                const matchesField = fieldValue === 'all' || fields.includes(fieldValue);
+                const matchesLocation = locationValue === 'all' || locations.includes(locationValue);
 
-                if (matchesSearch && matchesType && matchesField) {
+                if (matchesSearch && matchesType && matchesField && matchesLocation) {
                     opp.style.display = 'block';
                 } else {
                     opp.style.display = 'none';
@@ -351,6 +494,7 @@
         searchBox.addEventListener('input', filterOpportunities);
         typeFilter.addEventListener('change', filterOpportunities);
         fieldFilter.addEventListener('change', filterOpportunities);
+        locationFilter.addEventListener('change', filterOpportunities);
     </script>
 </body>
 </html>
