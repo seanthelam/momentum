@@ -1,274 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Pathways - Momentum</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pathways — Momentum</title>
+  <meta name="description" content="Interactive course-to-career matrix for physics students: aerospace, quantum, energy, national labs, and more.">
+  <meta name="theme-color" content="#0a0a0b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0b'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%23c9a24b' stroke-width='2'/%3E%3Ctext x='32' y='42' font-size='30' text-anchor='middle' fill='%23c9a24b' font-family='Georgia' font-style='italic'%3E%CF%86%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo">Momentum</a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="opportunities.html">Opportunities</a></li>
-                <li class="dropdown">
-                    <a href="pathways.html" class="active">Pathways</a>
-                    <div class="dropdown-content">
-                        <a href="pathways.html" class="active">Major & Minor Paths</a>
-                        <a href="career-paths.html">Career Paths</a>
-                    </div>
-                </li>
-                <li><a href="resources.html">Resources</a></li>
-                <li class="dropdown">
-                    <a href="timeline.html">Timeline</a>
-                    <div class="dropdown-content">
-                        <a href="timeline.html">Summer 2026 Apps</a>
-                        <a href="grad-school-timeline.html">Grad School Apps</a>
-                    </div>
-                </li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="page-header">
-        <h1>Physics Major & Minor Pathways</h1>
-        <p>Sample course sequences for completing the physics major or minor at Colorado College. Remember that Block Plan flexibility allows for many variations—these are just suggested pathways.</p>
+<body data-page="pathways">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header" class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Momentum home"><span class="brand-mark" aria-hidden="true">&phi;</span><span class="brand-text">Momentum<small>CC Society of Physics Students</small></span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu"><span class="bars"></span></button>
+      <ul class="nav-links" id="nav-links"><li><a href="index.html">Home</a></li><li><a href="opportunities.html">Opportunities</a></li><li><a href="employers.html">Employers</a></li><li><a href="pathways.html" aria-current="page">Pathways</a></li><li><a href="blocks.html">Block Plan</a></li><li><a href="timeline.html">Timeline</a></li><li><a href="alumni.html">Alumni</a></li><li><a href="resources.html">Resources</a></li><li><a href="about.html">About</a></li></ul>
     </div>
+  </header>
 
-    <main>
-        <section>
-            <div class="pathway-container">
-                <!-- 4-Year Physics Major -->
-                <div class="pathway-card">
-                    <h3>Physics Major (Sample 4 Years)</h3>
-                    
-                    <div class="year-section">
-                        <h4>First Year</h4>
-                        <ul>
-                            <li>Physics I: Mechanics</li>
-                            <li>Physics II: Electricity & Magnetism</li>
-                            <li>Calculus I & II (or equivalent)</li>
-                            <li>General Education blocks</li>
-                        </ul>
-                    </div>
+  <main id="main">
 
-                    <div class="year-section">
-                        <h4>Second Year</h4>
-                        <ul>
-                            <li>Modern Physics</li>
-                            <li>Electronics</li>
-                            <li>Classical Mechanics</li>
-                            <li>Techniques of Experimental Physics / Observational Astronomy</li>
-                            <li>Calculus III</li>
-                            <li>General Education blocks</li>
-                        </ul>
-                    </div>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Pathways</span>
+        <h1>Course to <em class="accent">career.</em></h1>
+        <p class="lead">Pick a path. See the upper-level physics, math, computer science, chemistry, and environmental science courses that matter most.</p>
+      </div>
+    </section>
 
-                    <div class="year-section">
-                        <h4>Third Year</h4>
-                        <ul>
-                            <li>Electromagnetic Theory and Vector Analysis</li>
-                            <li>Thermal Physics</li>
-                            <li>Applied Linear Algebra</li>
-                            <li><strong>Summer: REU or Research</strong></li>
-                        </ul>
-                    </div>
-
-                    <div class="year-section">
-                        <h4>Fourth Year</h4>
-                        <ul>
-                            <li>Senior Capstone</li>
-                            <li>Quantum Mechanics I/II</li>
-                            <li>Electives (Astrophysics, Solid State, etc.)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- 3-Year Physics Major (Advanced) -->
-                <div class="pathway-card">
-                    <h3>Physics Major (3 Years - Accelerated)</h3>
-                    <p style="text-align: center; color: var(--medium-gray); margin-bottom: 1rem; font-size: 0.9rem;">
-                        For students with AP/IB credit or strong math background
-                    </p>
-                    
-                    <div class="year-section">
-                        <h4>First Year</h4>
-                        <ul>
-                            <li>Physics II: E&M (if credit for Mechanics)</li>
-                            <li>Modern Physics</li>
-                            <li>Calculus III</li>
-                            <li>Electronics</li>
-                        </ul>
-                    </div>
-
-                    <div class="year-section">
-                        <h4>Second Year</h4>
-                        <ul>
-                            <li>Classical Mechanics</li>
-                            <li>Thermal Physics</li>
-                            <li>Computational Physics</li>
-                            <li>Electromagnetic Theory & Vector Analysis</li>
-                            <li><strong>Summer: REU or Research</strong></li>
-                        </ul>
-                    </div>
-
-                    <div class="year-section">
-                        <h4>Third Year</h4>
-                        <ul>
-                            <li>Quantum Mechanics I/II</li>
-                            <li>Senior Capstone</li>
-                            <li>Advanced Electives</li>
-                            <li>Consider graduate school applications</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Physics Minor -->
-                <div class="pathway-card">
-                    <h3>Physics Minor</h3>
-                    <p style="text-align: center; color: var(--medium-gray); margin-bottom: 1rem; font-size: 0.9rem;">
-                        Five physics courses. If a student places out of PC241 or PC242, they must substitute
-                        additional physics electives at the PC320 level or higher.
-                    </p>
-                    
-                    <div class="year-section">
-                        <h4>Required Core</h4>
-                        <ul>
-                            <li>PC241 - Physics I: Mechanics</li>
-                            <li>PC242 - Physics II: Electricity & Magnetism</li>
-                            <li>PC251 - Introductory Modern Physics</li>
-                            <li>PC261 - Electronics</li>
-                        </ul>
-                    </div>
-
-                    <div class="year-section">
-                        <h4>Choose One More</h4>
-                        <ul>
-                            <li>PC320: Topics in Physics</li>
-                            <li>PC333: Solid State Physics (not currently offered)</li>
-                            <li>PC341: Mechanics</li>
-                            <li>PC349: Thermal Physics</li>
-                            <li>PC352: Electromagnetic Theory & Vector Analysis (2 credits)</li>
-                            <li>PC354: Electromagnetic Waves and Optics</li>
-                            <li>PC357: Astrophysics</li>
-                            <li>PC358: Extragalactic Astronomy and Cosmology</li>
-                            <li>PC361: Techniques of Experimental Physics</li>
-                            <li>PC362: Observational Astronomy</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Course Planning Tips -->
-        <section>
-            <h2>Course Planning Tips</h2>
-            
-            <div class="info-box blue">
-                <h4>💡 Smart Planning Strategies</h4>
-                <ul>
-                    <li><strong>Start early:</strong> Begin Calculus and Physics I as early as possible—they're prerequisites for almost everything</li>
-                    <li><strong>Electronics is crucial:</strong> Take it by sophomore year for upper-level courses</li>
-                    <li><strong>Block Plan flexibility:</strong> You can take courses in different orders if prerequisites are met</li>
-                    <li><strong>Talk to your advisor:</strong> These are templates, not rigid requirements</li>
-                </ul>
-            </div>
-
-            <div class="card-grid" style="margin-top: 2rem;">
-                <div class="card">
-                    <h4>📚 Key Prerequisites</h4>
-                    <p><strong>For Electronics:</strong> Physics I-II, Introductory Modern Physics, Calculus I-II</p>
-                    <p><strong>For Quantum Mechanics:</strong> Mechanics, Applied Linear Algebra</p>
-                    <p><strong>For Some Upper Levels:</strong> Calculus III</p>
-                </div>
-                <div class="card">
-                    <h4>🎯 REU Preparation</h4>
-                    <p>Most REU programs look for:</p>
-                    <ul>
-                        <li>At least Modern Physics completed</li>
-                        <li>One or two upper-level courses</li>
-                        <li>Programming experience (Python, MATLAB, C++)</li>
-                        <li>Research experience (even if informal)</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h4>🎓 Grad School Track</h4>
-                    <p>For competitive PhD applications, aim to complete by graduation:</p>
-                    <ul>
-                        <li>Most core upper-division courses</li>
-                        <li>2-3 summer research experiences</li>
-                        <li>Senior thesis or research project</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Course Descriptions -->
-        <section>
-            <h2>Core Course Overview</h2>
-            
-            <div class="card">
-                <h4>Introductory Sequence</h4>
-                <p><strong>Physics I - Mechanics:</strong> Kinematics, Newton's laws, energy, momentum, rotation, oscillations, and waves. Foundation for all physics.</p>
-                <p><strong>Physics II - Electricity & Magnetism:</strong> Electric fields, circuits, magnetic fields, electromagnetic induction, and Maxwell's equations introduction.</p>
-                <p><strong>Modern Physics:</strong> Special relativity, quantum mechanics introduction, atomic physics, nuclear physics. Gateway to upper-level courses.</p>
-                <p><strong>Electronics:</strong> Analytical theory, simulation, hardware, and circuit design.</p>
-            </div>
-
-            <div class="card">
-                <h4>Mathematical Foundations</h4>
-                <p><strong>Calculus I-III:</strong> Derivatives, Integrals, Differential Equations, Taylor Polynomials, Vectors.</p>
-                <p><strong>Applied Linear Algebra:</strong> Linear equations, matrix algebra, systems, eigenvalues.</p>
-            </div>
-        </section>
-
-        <!-- Next Steps -->
-        <div class="info-box gold">
-            <h3>Ready to Plan Your Path?</h3>
-            <p style="margin-bottom: 1.5rem;">
-                Schedule a meeting with your academic advisor to map out your unique pathway. Bring this guide and any questions you have about course sequencing!
-            </p>
-            <a href="opportunities.html" class="cta-button">Explore Research Opportunities</a>
+    <section id="explorer" style="padding-top:2.5rem">
+      <div class="container">
+        <div class="path-layout">
+          <div><h2 class="sr-only">Choose a pathway</h2><div class="path-list" id="path-list" role="group" aria-label="Career pathways"></div></div>
+          <div class="path-panel" id="path-panel" aria-live="polite"></div>
         </div>
-    </main>
+      </div>
+    </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Momentum</h3>
-                <p>Colorado College Physics Student Resources</p>
-                <p style="margin-top: 1rem;">Built with ⚛️ by students, for students</p>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <a href="opportunities.html">Summer Opportunities</a>
-                <a href="pathways.html">Academic Pathways</a>
-                <a href="resources.html">Application Resources</a>
-                <a href="timeline.html">Application Timeline</a>
-            </div>
-            <div class="footer-section">
-                <h3>Resources</h3>
-                <a href="https://www.nsf.gov/crssprgm/reu/list_result.jsp?unitid=69" target="_blank">NSF REU List</a>
-                <a href="https://science.osti.gov/wdts/suli" target="_blank">DOE SULI Program</a>
-                <a href="https://www.aps.org/" target="_blank">American Physical Society</a>
-                <a href="https://www.spsnational.org/" target="_blank">SPS National</a>
-            </div>
-            <div class="footer-section">
-                <h3>Colorado College</h3>
-                <a href="https://www.coloradocollege.edu/academics/dept/physics/" target="_blank">Physics Department</a>
-                <a href="https://www.coloradocollege.edu/" target="_blank">CC Homepage</a>
-                <a href="about.html">SPS Chapter</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Colorado College Society of Physics Students. Last updated: November 2025</p>
-            <p style="margin-top: 0.5rem;">Maintained on <a href="#" style="color: var(--cc-gold);">GitHub</a> • Contributions welcome!</p>
-        </div>
-    </footer>
+    <hr class="rule">
+    <section>
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Full matrix</span><h2>Every course, every <em class="accent">path</em></h2>
+          <p class="lead">Select any column heading to jump to that pathway.</p></div>
+        <div class="legend"><span><i class="dot dot-1"></i> Essential</span><span><i class="dot dot-2"></i> Recommended</span><span><i class="dot dot-3"></i> Helpful</span></div>
+        <div class="matrix-wrap" id="matrix" tabindex="0" aria-label="Course to career matrix, scrollable"></div>
+        <p class="notice" style="margin-top:1.5rem"><strong>Verify with faculty.</strong> Courses are listed by topic, not catalog number. Confirm exact CC course names, prerequisites, and block offerings with the registrar and your advisor — then add them to <code>js/data.js</code>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">&phi;</span><span class="brand-text">Momentum<small>CC Society of Physics Students</small></span></a>
+          <p class="muted" style="margin-top:1rem;max-width:380px">A student-built bridge between rigorous physics and the careers and graduate programs it opens.</p></div>
+        <div><h4>Explore</h4><ul><li><a href="opportunities.html">Opportunities</a></li><li><a href="employers.html">Employers</a></li><li><a href="pathways.html">Pathways</a></li><li><a href="blocks.html">Block Plan</a></li><li><a href="timeline.html">Timeline</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="alumni.html">Alumni</a></li><li><a href="resources.html">Resources</a></li><li><a href="about.html">About &amp; contributing</a></li></ul></div>
+      </div>
+      <p class="fine">Student-run resource, not an official Colorado College publication. Deadlines and program details change &mdash; always confirm on the official application page before relying on them.</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  <script src="pathways.js"></script>
+  <script>
+  if (!window.HUB) { document.body.insertAdjacentHTML("afterbegin", '<div style="background:#7a2e2e;color:#fff;padding:14px 18px;font:15px/1.5 sans-serif;position:relative;z-index:999"><b>Some site files did not load.</b> Keep every file from the zip together in ONE folder (do not move individual files), then open index.html again.</div>'); }
+</script>
 </body>
-
 </html>
