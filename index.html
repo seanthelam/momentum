@@ -12,10 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo">Momentum</a>
+<body data-page="home">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header id="site-header" class="site-header">
+        <div class="container nav">
+            <a class="brand" href="index.html" aria-label="Momentum home"><span class="brand-mark" aria-hidden="true">M</span><span class="brand-text">Momentum<small>CC Physics</small></span></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu"><span class="bars"></span></button>
+            <ul class="nav-links" id="nav-links"><li><a href="index.html" aria-current="page">Home</a></li><li><a href="opportunities.html">Opportunities</a></li><li><a href="employers.html">Employers</a></li><li><a href="pathways.html">Pathways</a></li><li><a href="blocks.html">Block Plan</a></li><li><a href="timeline.html">Timeline</a></li><li><a href="alumni.html">Alumni</a></li><li><a href="resources.html">Resources</a></li><li><a href="about.html">About</a></li></ul>
+        </div>
+    </header>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="opportunities.html">Opportunities</a></li>
