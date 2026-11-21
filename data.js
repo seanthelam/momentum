@@ -326,6 +326,67 @@ HUB.TIMELINE = {
         { t: "Plan housing and relocation" }
       ]}
     ]
+  },
+  summer: {
+    label: "Summer Research & Internships (Sophomores / Juniors)",
+    blurb: "Most summer research and internship cycles run a full year ahead of the summer itself: big-company internships recruit in the fall, while REUs and national labs close between January and March. Start in August and you'll beat most of the pool. Dates are typical, so confirm each program.",
+    months: [
+      { m: 8, name: "August", items: [
+        { t: "Pick your target: research (REU / national lab), industry internship, or both" },
+        { t: "Update your resume to one page: projects, lab skills, code. Get it reviewed at the Career Center" },
+        { t: "Create Handshake and USAJOBS profiles and set saved searches for 'physics', 'research', 'intern'" },
+        { t: "Ask a professor about research during the year. It's the best way to be competitive for REUs" },
+        { t: "Save 10 programs from the Opportunities board that you'd apply to" }
+      ]},
+      { m: 9, name: "September", items: [
+        { t: "Large tech and aerospace companies start opening summer internship applications. Apply early, since many fill on a rolling basis", hard: true },
+        { t: "Join SPS and go to the first meeting. Alumni and speaker events are where leads come from" },
+        { t: "Start a master list: program, deadline, what they need (letters, transcript, essay)" },
+        { t: "Practice 2–3 coding or technical-interview problems a week if you're targeting software or data roles" }
+      ]},
+      { m: 10, name: "October", items: [
+        { t: "Apply to company internships that are already open (e.g. Google Student Researcher, aerospace primes, quantum startups)", hard: true },
+        { t: "Message 3 alumni or family friends for 20-minute informational chats" },
+        { t: "Draft a master personal statement (1 page) you can adapt for every REU application" },
+        { t: "Ask two professors if they'd write recommendation letters, and give them your resume and deadlines" }
+      ]},
+      { m: 11, name: "November", items: [
+        { t: "Finish and submit any remaining fall internship applications", hard: true },
+        { t: "Use the Thanksgiving block break to polish your statement and resume" },
+        { t: "Give recommenders your list of programs and deadlines, with links" },
+        { t: "Do a mock interview through the Career Center" }
+      ]},
+      { m: 12, name: "December", items: [
+        { t: "Winter break: finish REU applications that are already open and draft the rest" },
+        { t: "Prepare a two-minute explanation of your best project for early interviews" },
+        { t: "Confirm every letter writer has your materials" }
+      ]},
+      { m: 1, name: "January", items: [
+        { t: "DOE SULI and many national-lab and REU deadlines fall in early to mid January. Check your list now", hard: true },
+        { t: "Submit REU applications early, since many programs review on a rolling basis" },
+        { t: "Reply quickly to interview requests and nudge recommenders to submit letters" }
+      ]},
+      { m: 2, name: "February", items: [
+        { t: "Many REU, NIST SURF and other NSF-funded deadlines land in February–March", hard: true },
+        { t: "NASA and other federal internship deadlines cluster in late February–March. Verify your target's date", hard: true },
+        { t: "Look into funding if a program is unpaid or needs housing support" }
+      ]},
+      { m: 3, name: "March", items: [
+        { t: "Last big REU and federal internship deadlines. Submit anything still open", hard: true },
+        { t: "Offers start to arrive. Ask for the accept-by date and compare stipend, housing, and mentor" },
+        { t: "Send thank-you notes after interviews" }
+      ]},
+      { m: 4, name: "April", items: [
+        { t: "Accept an offer and tell other programs promptly so they can free up your spot" },
+        { t: "Ask about housing, onboarding, background checks, and any citizenship or clearance paperwork" },
+        { t: "No offer yet? Apply to rolling internships and ask professors about summer research on campus or nearby (CU Boulder, NIST, LASP)" }
+      ]},
+      { m: 5, name: "May", items: [
+        { t: "Plan housing, travel, and first-week goals with your mentor" },
+        { t: "Ask your mentor what to read before you start" },
+        { t: "Still looking? Rolling internships, lab-tech roles, and on-campus research are still open" }
+      ]}
+    ]
   }
 };
 
