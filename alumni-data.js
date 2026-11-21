@@ -35,6 +35,7 @@ HUB.ALUMNI = [
   { year: 2003, major: "Physics", sector: "Data & Software", path: "Teaching / Service", first: "Physics Teacher", now: "Senior Data Analyst", where: "KBR, Alabama", domain: "kbr.com" },
   { year: 2016, major: "Astrophysics", sector: "Aerospace", path: "Graduate School", first: "Master's Program, Space Systems Engineering", now: "Senior Software Engineer", where: "Space Telescope Science Institute, Maryland", domain: "stsci.edu" },
   { year: 2000, major: "Physics", sector: "Education", path: "Graduate School", first: "M.A., Teaching", now: "High School Physics Teacher", where: "Colorado Springs, Colorado", domain: "asd20.org" },
-  { year: 2008, major: "Physics", sector: "Research", path: "Graduate School", first: "PhD Program, Atmospheric and Oceanic Sciences", now: "Scientist VI", where: "NSF NCAR, Colorado", domain: "ncar.ucar.edu" }
+  { year: 2008, major: "Physics", sector: "Research", path: "Graduate School", first: "PhD Program, Atmospheric and Oceanic Sciences", now: "Scientist VI", where: "NSF NCAR, Colorado", domain: "ncar.ucar.edu" },
+  { year: 2016, major: "Physics", sector: "Research", path: "Graduate School", first: "PhD Program, Physics", now: "Postdoctoral Researcher", where: "Pacific Northwest National Laboratory", domain: "pnnl.gov" }
 ];
 
