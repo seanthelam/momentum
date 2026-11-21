@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alumni — Momentum</title>
+  <meta name="description" content="Anonymous Colorado College physics alumni outcomes by sector, graduation year, and path.">
+  <meta name="theme-color" content="#0a0a0b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0b'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%23c9a24b' stroke-width='2'/%3E%3Ctext x='32' y='42' font-size='30' text-anchor='middle' fill='%23c9a24b' font-family='Georgia' font-style='italic'%3E%CF%86%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="alumni">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header" class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Momentum home"><span class="brand-mark" aria-hidden="true">&phi;</span><span class="brand-text">Momentum<small>CC Society of Physics Students</small></span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu"><span class="bars"></span></button>
+      <ul class="nav-links" id="nav-links"><li><a href="index.html">Home</a></li><li><a href="opportunities.html">Opportunities</a></li><li><a href="employers.html">Employers</a></li><li><a href="pathways.html">Pathways</a></li><li><a href="blocks.html">Block Plan</a></li><li><a href="timeline.html">Timeline</a></li><li><a href="alumni.html" aria-current="page">Alumni</a></li><li><a href="resources.html">Resources</a></li><li><a href="about.html">About</a></li></ul>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Alumni</span>
+        <h1>Where CC physicists <em class="accent">went.</em></h1>
+        <p class="lead">Anonymous snapshots: graduation year, what came first, and where they are now. Filter by sector or path.</p>
+      </div>
+    </section>
+
+    <section style="padding-top:2.5rem">
+      <div class="container">
+        <p class="notice" id="sample-notice" style="margin-bottom:1.5rem"><strong>Sample data.</strong> These entries are placeholders to show the layout. Replace them in <code>alumni-data.js</code> with real, consented, anonymous entries from an alumni survey.</p>
+
+        <div class="board-controls">
+          <div class="field">
+            <label class="sr-only" for="alumni-q">Search alumni</label>
+            <span class="icon" aria-hidden="true">⌕</span>
+            <input id="alumni-q" class="input" type="search" placeholder="Search field, role, graduation year, location…" autocomplete="off">
+          </div>
+          <div><p class="eyebrow" style="margin:0 0 .6rem">Sector</p><div class="chip-row" id="sector-chips" role="group"></div></div>
+          <div><p class="eyebrow" style="margin:0 0 .6rem">After CC</p><div class="chip-row" id="path-chips" role="group"></div></div>
+        </div>
+
+        <div class="board-meta"><strong id="alumni-count" aria-live="polite">–</strong></div>
+        <div class="alumni-grid" id="alumni-grid" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">&phi;</span><span class="brand-text">Momentum<small>CC Society of Physics Students</small></span></a>
+          <p class="muted" style="margin-top:1rem;max-width:380px">A student-built bridge between rigorous physics and the careers and graduate programs it opens.</p></div>
+        <div><h4>Explore</h4><ul><li><a href="opportunities.html">Opportunities</a></li><li><a href="employers.html">Employers</a></li><li><a href="pathways.html">Pathways</a></li><li><a href="blocks.html">Block Plan</a></li><li><a href="timeline.html">Timeline</a></li></ul></div>
+        <div><h4>More</h4><ul><li><a href="alumni.html">Alumni</a></li><li><a href="resources.html">Resources</a></li><li><a href="about.html">About &amp; contributing</a></li></ul></div>
+      </div>
+      <p class="fine">Student-run resource, not an official Colorado College publication. Deadlines and program details change &mdash; always confirm on the official application page before relying on them.</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="alumni-data.js"></script>
+  <script src="main.js"></script>
+  <script src="alumni.js"></script>
+  <script>
+  if (!window.HUB) { document.body.insertAdjacentHTML("afterbegin", '<div style="background:#7a2e2e;color:#fff;padding:14px 18px;font:15px/1.5 sans-serif;position:relative;z-index:999"><b>Some site files did not load.</b></div>'); }
+</script>
+</body>
+</html>
+
+
+
 
