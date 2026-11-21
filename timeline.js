@@ -1,5 +1,5 @@
 /* ==========================================================
-   Senior-year timeline with Industry / Grad School toggle.
+   Timeline with Summer (soph/junior), Senior Jobs, and Senior Grad School tracks.
    Checked items persist per-browser (localStorage, if allowed).
    ========================================================== */
 (function () {
@@ -10,7 +10,7 @@
   const KEY = "ccphys-timeline-v1";
   const MONTH_NAMES = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-  let track = U.store.get(KEY + "-track", "industry");
+  let track = U.store.get(KEY + "-track", "summer");
   if (!T[track]) track = "industry";
   let checks = U.store.get(KEY + "-checks", {});
 
@@ -54,7 +54,7 @@
   function renderNow() {
     const mo = T[track].months.find((m) => U.acadIndex(m.m) === curIdx);
     if (!mo) {
-      thisMonth.innerHTML = `<p class="muted" style="margin:0">The senior-year calendar runs August–May. Browse below to plan ahead.</p>`;
+      thisMonth.innerHTML = `<p class="muted" style="margin:0">The calendar runs August–May. Browse below to plan ahead.</p>`;
       return;
     }
     const hard = mo.items.filter((i) => i.hard);
@@ -84,7 +84,7 @@
     U.store.set(KEY + "-checks", checks); updateProgress();
   });
   $("#reset-progress").addEventListener("click", () => {
-    if (!confirm("Clear all checked items for both tracks?")) return;
+    if (!confirm("Clear all checked items for every track?")) return;
     checks = {}; U.store.set(KEY + "-checks", checks); render();
   });
 
@@ -93,7 +93,5 @@
   render();
   void MONTH_NAMES;
 })();
-
-
 
 
