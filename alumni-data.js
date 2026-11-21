@@ -26,7 +26,7 @@ HUB.ALUMNI = [
   { year: 2016, major: "Physics", sector: "Medical Physics", path: "Graduate School", first: "PhD Program, Medical Physics", now: "Radiation Oncology Physicist", where: "Cedars-Sinai Medical Center, Los Angeles", domain: "cedars-sinai.org" },
   { year: 2022, major: "Environmental Physics", sector: "Plasma Physics", path: "Graduate School", first: "Post-Bachelor's Researcher", now: "PhD Candidate, Plasma Physics", where: "UC San Diego, California", domain: "ucsd.edu" },
   { year: 2024, major: "Physics", sector: "Engineering", path: "Graduate School", first: "PhD Program, Biomedical Engineering", now: "PhD Student, Biomedical Engineering", where: "Northwestern University, Illinois", domain: "northwestern.edu" },
-  { year: 2025, major: "Physics", sector: "Journalism", path: "Education", first: "Physics Teacher", now: "Reporter", where: "Glenwood Springs, Colorado", domain: "postindependent.com" }
+  { year: 2025, major: "Physics", sector: "Journalism", path: "Teaching / Service", first: "Physics Teacher", now: "Reporter", where: "Glenwood Springs, Colorado", domain: "postindependent.com" }
 
 
 ];
