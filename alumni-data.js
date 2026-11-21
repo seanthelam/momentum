@@ -21,13 +21,19 @@ HUB.ALUMNI = [
   { year: 2026, major: "Computational Physics", sector: "Energy", path: "Industry", first: "Project Engineer", now: "Project Engineer", where: "McKinstry, Washington", domain: "mckinstry.com" },
   { year: 2022, major: "Computational Physics", sector: "Aerospace", path: "Industry", first: "Electric Ducted Fan Test and Design Engineering Fellow", now: "Systems Engineer", where: "Sierra Space, Colorado", domain: "sierraspace.com" },
   { year: 2026, major: "Computational Physics", sector: "Kinesiology", path: "Graduate School", first: "Athlete Relations and Investigations Intern", now: "MSc Candidate, Applied Physiology", where: "UCCS, Colorado", domain: "uccs.edu" },
-  { year: 2008, major: "Physics", sector: "Astronomy", path: "Graduate School", first: "PhD Program, Astronomy", now: "Department Chair", where: "Colorado College, Colorado", domain: "coloradocollege.edu" },
+  { year: 2008, major: "Physics", sector: "Physics & Astronomy", path: "Graduate School", first: "PhD Program, Astronomy", now: "Department Chair", where: "Colorado College, Colorado", domain: "coloradocollege.edu" },
   { year: 2008, major: "Physics", sector: "Engineering", path: "Graduate School", first: "PhD Program, Mechanical Engineering", now: "Associate Professor of Engineering", where: "Roger Williams University, Rhode Island", domain: "rwu.edu" },
   { year: 2016, major: "Physics", sector: "Medical Physics", path: "Graduate School", first: "PhD Program, Medical Physics", now: "Radiation Oncology Physicist", where: "Cedars-Sinai Medical Center, Los Angeles", domain: "cedars-sinai.org" },
   { year: 2022, major: "Environmental Physics", sector: "Plasma Physics", path: "Graduate School", first: "Post-Bachelor's Researcher", now: "PhD Candidate, Plasma Physics", where: "UC San Diego, California", domain: "ucsd.edu" },
   { year: 2024, major: "Physics", sector: "Engineering", path: "Graduate School", first: "PhD Program, Biomedical Engineering", now: "PhD Student, Biomedical Engineering", where: "Northwestern University, Illinois", domain: "northwestern.edu" },
-  { year: 2025, major: "Physics", sector: "Journalism", path: "Teaching / Service", first: "Physics Teacher", now: "Reporter", where: "Glenwood Springs, Colorado", domain: "postindependent.com" }
-
-
+  { year: 2025, major: "Physics", sector: "Journalism", path: "Teaching / Service", first: "Physics Teacher", now: "Reporter", where: "Glenwood Springs, Colorado", domain: "postindependent.com" },
+  { year: 2024, major: "Physics", sector: "Physics & Astronomoy", path: "Graduate School", first: "PhD Program, Physics & Astronomy", now: "PhD Student, Physics & Astronomy", where: "Montana State University, Montana", domain: "montana.edu" },
+  { year: 2024, major: "Physics", sector: "Physics", path: "Graduate School", first: "PhD Program, Physics", now: "PhD Student, Physics", where: "CU Boulder, Colorado", domain: "colorado.edu" },
+  { year: 2011, major: "Physics", sector: "Data & Software", path: "Graduate School", first: "PhD Program, Electrical and Computer Engineering", now: "Research Scientist", where: "Amazon, United States", domain: "amazon.com" },
+  { year: 2008, major: "Physics", sector: "Film & Entertainment", path: "Startup", first: "Owner and Founder", now: "Owner and Founder", where: "Sweetgrass Productions LLC.", domain: "sweetgrass-productions.com" },
+  { year: 2008, major: "Physics and Political Science", sector: "Policy & Law", path: "Law School", first: "Law School", now: "Deputy General Counsel", where: "Philadelphia, Pennsylvania", domain: "ogc.pa.gov" },
+  { year: 2003, major: "Physics", sector: "Data & Software", path: "Teaching / Service", first: "Physics Teacher", now: "Senior Data Analyst", where: "KBR, Alabama", domain: "kbr.com" },
+  { year: 2016, major: "Astrophysics", sector: "Aerospace", path: "Graduate School", first: "Master's Program, Space Systems Engineering", now: "Senior Software Engineer", where: "Space Telescope Science Institute, Maryland", domain: "stsci.edu" },
+  { year: 2000, major: "Physics", sector: "Education", path: "Graduate School", first: "M.A., Teaching", now: "High School Physics Teacher", where: "Colorado Springs, Colorado", domain: "asd20.org" }
 ];
 
