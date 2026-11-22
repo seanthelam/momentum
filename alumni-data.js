@@ -49,6 +49,7 @@ HUB.ALUMNI = [
   { year: 2012, major: "Astrophysics", sector: "Aerospace", path: "Industry", first: "Engineering Technician", now: "Senior Navigation Manager", where: "Blue Origin", domain: "blueorigin.com" },
   { year: 2014, major: "Physics", sector: "Aerospace", path: "Graduate School", first: "Master's, Mechanical Engineering", now: "Lead Propulsion Engineer", where: "SpaceX", domain: "spacex.com" },
   { year: 2022, major: "Physics", sector: "Quantum", path: "Industry", first: "Physicist 1", now: "Physicist 2", where: "Quantinuum", domain: "quantinuum.com" },
-  { year: 2001, major: "Physics and Chemistry", sector: "Aerospace", path: "Graduate School", first: "PhD Program, Chemical Physics", now: "Principal System Engineer", where: "Honeywell", domain: "honeywell.com" }
+  { year: 2001, major: "Physics and Chemistry", sector: "Aerospace", path: "Graduate School", first: "PhD Program, Chemical Physics", now: "Principal System Engineer", where: "Honeywell", domain: "honeywell.com" },
+  { year: 2019, major: "Physics", sector: "Physics", path: "Graduate School", first: "MSc Candidate, Materials Science", now: "PhD Candidate, Materials Chemistry", where: "ETH Zurich", domain: "ethz.ch/en.html" }
 ];
 
