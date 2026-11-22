@@ -36,10 +36,19 @@ HUB.ALUMNI = [
   { year: 2016, major: "Astrophysics", sector: "Aerospace", path: "Graduate School", first: "Master's Program, Space Systems Engineering", now: "Senior Software Engineer", where: "Space Telescope Science Institute, Maryland", domain: "stsci.edu" },
   { year: 2000, major: "Physics", sector: "Education", path: "Graduate School", first: "M.A., Teaching", now: "High School Physics Teacher", where: "Colorado Springs, Colorado", domain: "asd20.org" },
   { year: 2008, major: "Physics", sector: "Research", path: "Graduate School", first: "PhD Program, Atmospheric and Oceanic Sciences", now: "Scientist VI", where: "NSF NCAR, Colorado", domain: "ncar.ucar.edu" },
-  { year: 2016, major: "Physics", sector: "Research", path: "Graduate School", first: "PhD Program, Physics", now: "Postdoctoral Researcher", where: "Pacific Northwest National Laboratory", domain: "pnnl.gov" },
+  { year: 2016, major: "Physics", sector: "National Lab", path: "Graduate School", first: "PhD Program, Physics", now: "Postdoctoral Researcher", where: "Pacific Northwest National Laboratory", domain: "pnnl.gov" },
   { year: 2023, major: "Physics", sector: "Aerospace", path: "Industry", first: "Optical Engineer Associate", now: "Optical Engineer", where: "Lockheed Martin", domain: "lockheedmartin.com" },
   { year: 2013, major: "Physics", sector: "Aerospace", path: "Industry", first: "Materials and Process Engineer", now: "Senior Program Integration Manager", where: "Boeing, Washington", domain: "boeing.com" },
   { year: 2017, major: "Physics", sector: "Aerospace", path: "Industry", first: "Contractor", now: "Engineer Technical Specialist", where: "Boeing, Washington", domain: "boeing.com" },
-  { year: 1984, major: "Physics", sector: "Aerospace", path: "Industry", first: "Systems Engineer", now: "Senior Systems Engineer", where: "Boeing", domain: "boeing.com" }
+  { year: 1984, major: "Physics", sector: "Aerospace", path: "Industry", first: "Systems Engineer", now: "Senior Systems Engineer", where: "Boeing", domain: "boeing.com" },
+  { year: 2012, major: "Physics", sector: "National Lab", path: "Graduate School", first: "PhD Program, Physics", now: "Staff Scientist", where: "Los Alamos National Laboratory", domain: "lanl.gov" },
+  { year: 2007, major: "Physics", sector: "National Lab", path: "Graduate School", first: "PhD Program, Aerospace Engineering", now: "Scientist", where: "Los Alamos National Laboratory", domain: "lanl.gov" },
+  { year: 2006, major: "Physics", sector: "National Lab", path: "Graduate School", first: "PhD Program, Astronomy and Astrophysics", now: "Scientist", where: "Los Alamos National Laboratory", domain: "lanl.gov" },
+  { year: 1990, major: "Physics", sector: "National Lab", path: "Graduate School", first: "PhD Program, Geophysics", now: "Partner", where: "Los Alamos National Laboratory", domain: "lanl.gov" },
+  { year: 1983, major: "Physics and Geology", sector: "Aerospace", path: "Graduate School", first: "PhD Program, Atmospheric Sciences and Optics", now: "Engineer", where: "Raytheon", domain: "rtx.com" },
+  { year: 2012, major: "Astrophysics", sector: "Aerospace", path: "Industry", first: "Engineering Technician", now: "Senior Navigation Manager", where: "Blue Origin", domain: "blueorigin.com" },
+  { year: 2014, major: "Physics", sector: "Aerospace", path: "Graduate School", first: "Master's, Mechanical Engineering", now: "Lead Propulsion Engineer", where: "SpaceX", domain: "spacex.com" },
+  { year: 2022, major: "Physics", sector: "Quantum", path: "Industry", first: "Physicist 1", now: "Physicist 2", where: "Quantinuum", domain: "quantinuum.com" },
+  { year: 2001, major: "Physics and Chemistry", sector: "Aerospace", path: "Graduate School", first: "PhD Program, Chemical Physics", now: "Principal System Engineer", where: "Honeywell", domain: "honeywell.com" }
 ];
 
