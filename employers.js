@@ -4,7 +4,7 @@
   const U = HUBUTIL, esc = U.esc, $ = (s) => document.querySelector(s);
   const data = HUB.EMPLOYERS;
   const st = { q: "", view: "All", type: "All", sector: "All" };
-  const VIEWS = [["All", "All"], ["cc", "Where CC physics majors went"], ["aip", "AIP list: where physics bachelors are hired"]];
+  const VIEWS = [["All", "All"], ["cc", "Where CC students went"], ["aip", "AIP list: where physics bachelors are hired"]];
   const grid = $("#emp-grid"), count = $("#emp-count");
 
   const match = (e, skip) => {
